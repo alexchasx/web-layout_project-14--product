@@ -1,0 +1,132 @@
+.footer {
+  background-color: var(--color-md_grey);
+
+  &__container {
+    padding-top: 24px;
+    padding-bottom: 21px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 24px;
+  }
+
+  &__icons {
+    a {
+      margin-left: -3px;
+      padding: 3px;
+      padding-bottom: 0;
+      display: inline-block;
+
+      &:focus {
+        outline: none;
+        background-color: var(--color-primary_light);
+
+        &:active {
+          background-color: transparent;
+        }
+
+        svg {
+          fill: var(--color-white);
+
+          &:active {
+            fill: var(--color-primary_shade);
+          }
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 13px;
+      }
+    }
+
+    &-svg {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      fill: var(--color-grey);
+
+      @include hover {
+        fill: var(--color-primary);
+      }
+    }
+  }
+
+  .nav {
+    padding-top: 3px;
+    display: flex;
+    justify-content: space-between;
+    width: 843px;
+
+    &__wrap {
+      position: relative;
+    }
+
+    &__title {
+      margin-bottom: 8px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      color: var(--color-black);
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__item {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      color: var(--color-grey);
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 7px;
+    }
+
+    &__link {
+      right: 10px;
+    }
+  }
+
+  &__services {
+    left: -18px;
+  }
+
+  &__contacts {
+    left: -16px;
+  }
+
+  &__bottom {
+    background-color: var(--color-grey_light);
+    text-align: center;
+  }
+
+  &__sub-text {
+    margin: 0 auto;
+    height: 30px;
+
+    .sub-text {
+      position: relative;
+      top: 5px;
+      left: 0px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      color: var(--color-grey);
+
+      sup {
+        margin-right: 12px;
+      }
+    }
+  }
+}

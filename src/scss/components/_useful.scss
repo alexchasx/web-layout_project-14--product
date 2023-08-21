@@ -1,0 +1,57 @@
+.useful {
+  &__title {
+    margin-bottom: 26px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    color: var(--color-black);
+    @include crop-text(2);
+  }
+
+  .swiper-slide {
+    width: 624px;
+    border-radius: 10px;
+  }
+
+  &__card.lazy {
+    background-image: none;
+  }
+
+  &__card {
+    @extend .swiper-slide;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0;
+    padding-top: 426px;
+    min-height: 676px;
+    background-color: var(--color-grey_light);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @for $i from 1 through 5 {
+      &--#{$i} {
+        background-image: url('../img/usefull_w624_#{$i}.webp');
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    height: 100%;
+  }
+
+  &__text {
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    @include crop-text(4);
+  }
+}

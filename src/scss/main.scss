@@ -1,0 +1,25 @@
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'settings';
+
+@import './common/my-choices';
+@import './common/modal';
+
+@import './components/header';
+@import './components/hero';
+@import './components/spec-offers';
+@import './components/high-rating';
+@import './components/banner';
+@import './components/top-category';
+@import './components/useful';
+@import './components/feedback';
+
+@import './components/product-card';
+@import './components/similar';
+
+@import './components/footer';
+
+@import 'media/_mini-desktop';
+@import 'media/_tablet';
+@import 'media/_mobile';

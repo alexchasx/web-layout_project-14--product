@@ -1,0 +1,48 @@
+.banner.lazy {
+  background-image: none;
+}
+
+.banner {
+  background-image: url('../img/banner-1920.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--color-grey);
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 34px;
+    padding-bottom: 30px;
+    width: 550px;
+    min-height: 600px;
+  }
+
+  &__title {
+    margin-bottom: 49px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    color: var(--color-white);
+
+    &-accent {
+      font-family: var(--second-family);
+      font-style: normal;
+      font-weight: 900;
+      font-size: 60px;
+      line-height: 120%;
+      color: var(--color-gold);
+    }
+  }
+
+  &__button {
+    padding: 20px 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+  }
+}

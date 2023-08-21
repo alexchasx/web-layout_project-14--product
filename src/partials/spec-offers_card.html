@@ -1,0 +1,43 @@
+<div class="swiper-slide @class_swiper_big">
+  <div class="spec-offers__card card @class_card_big card--@number">
+    <div class="card__badge badge">@badge</div>
+
+    <picture class="card__image">
+      <source
+        srcset="img/@img_desk.webp"
+        media="(min-width: 1351px)"
+        width="@width_img_desk"
+        height="@height_img_desk"
+      />
+      <img
+        loading="lazy"
+        src="img/@img.webp"
+        alt="@title"
+        width="@width_img"
+        height="@height_img"
+      />
+    </picture>
+
+    <div class="card__content">
+      <h3 class="card__title">@title</h3>
+
+      <p class="card__price">
+        @price
+        <del class="card__price-crossed">@price_before</del>
+      </p>
+
+      <button class="btn-reset btn card__btn">Купить</button>
+
+      @if (img_mini) {
+        <img
+          class="card__image-mini"
+          loading="lazy"
+          src="img/@img_mini.webp"
+          alt="@title"
+          width="@width_img_mini"
+          height="@height_img_mini"
+        />
+      }
+    </div>
+  </div>
+</div>

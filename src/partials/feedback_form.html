@@ -1,0 +1,44 @@
+<form class="feedback__form form" id="@id_form" action="/" method="POST">
+  <div class="field-wrap">
+    <input
+      class="input-reset form__input form-field"
+      type="text"
+      name="name"
+      placeholder="Как вас зовут?"
+      id="@name"
+    />
+  </div>
+
+  <div class="field-wrap">
+    <input
+      class="input-reset form__input form-field"
+      name="phone"
+      placeholder="Ваш телефон"
+      id="@phone"
+    />
+  </div>
+
+  @if (email) {
+    <div class="field-wrap">
+      <input
+        class="input-reset form__input form-field"
+        name="email"
+        placeholder="Ваш e-mail"
+        id="@email"
+      />
+    </div>
+  }
+
+  <button class="btn-reset btn btn-fill form__submit feedback__btn" type="submit">
+    Отправить
+  </button>
+
+  <div class="field-wrap feedback__user-agreement user-agreement">
+    <label class="user-agreement__check">
+      <input name="user-agreement" id="@user_agreement" type="checkbox" class="user-agreement__input visually-hidden">
+      <span class="user-agreement__text">Принимаю</span>
+    </label>
+    <a class="link user-agreement__link" href="#">пользовательское соглашение</a>
+  </div>
+
+</form>
